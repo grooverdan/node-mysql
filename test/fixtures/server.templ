@@ -1,0 +1,14 @@
+# certtool --generate-privkey --bits 4096 --outfile server.key
+# certtool --generate-self-signed --load-privkey server.key --template server.templ  --outfile server.crt
+
+serial=   99
+country= US
+state= Indiana
+organization= node-mysql
+expiration_days = 3660
+
+cn=node-mysql
+
+ca
+tls_www_server
+encryption_key
